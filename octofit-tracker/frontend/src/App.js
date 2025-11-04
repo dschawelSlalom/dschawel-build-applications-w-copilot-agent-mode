@@ -7,14 +7,14 @@ import Users from './components/Users';
 import Workouts from './components/Workouts';
 
 // Logo import
-import logo from '../public/octofitapp-small.png';
+// import logo from '../public/octofitapp-small.png';
 
 function App() {
   return (
     <div className="App container">
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
         <NavLink className="navbar-brand d-flex align-items-center" to="/">
-          <img src={logo} alt="OctoFit Logo" className="octofit-logo" />
+          <img src={process.env.PUBLIC_URL + '/octofitapp-small.png'} alt="OctoFit Logo" className="octofit-logo" />
           OctoFit Tracker
         </NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
